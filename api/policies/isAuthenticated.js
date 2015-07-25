@@ -3,7 +3,7 @@ module.exports = function (req, res, next) {
     return next();
   } else {
     return res.forbidden({
-    	message: 'You are not authorized, please sign-in first.'
+      message: 'You are not authorized, please sign-in first.'
     });
   }
 };
