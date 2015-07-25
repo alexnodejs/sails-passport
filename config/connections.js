@@ -66,13 +66,9 @@ module.exports.connections = {
   },
 
   prodMongodbServer: {
-    adapter: 'sails-mongo'
-    host: process.env.MONGODB_HOST || 'localhost',
-    port: process.env.MONGODB_PORT || 27017,
-    user: process.env.MONGODB_USER || 'username',
-    password: process.env.MONGODB_PASSWORD || 'password',
-    database: process.env.MONGODB_DATABASE || 'db'
-  }
+    adapter: 'sails-mongo',
+    url: process.env.MONGODB_URL || 'mongodb://localhost:27017/db'
+  },
 
   /***************************************************************************
   *                                                                          *
