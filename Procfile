@@ -1,1 +1,1 @@
-microbiome: node app.js --prod
+web: node app.js --prod
