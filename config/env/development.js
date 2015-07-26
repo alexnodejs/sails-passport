@@ -18,7 +18,11 @@ module.exports = {
    ***************************************************************************/
 
   models: {
-    connection: 'localMongodbServer'
-  }
+    connection: 'prodMongodbServer'
+  },
+
+  port: process.env.PORT || '3000',
+
+  explicitHost: process.env.HOST || '0.0.0.0'
 
 };
