@@ -33,7 +33,7 @@ module.exports.session = {
 
   cookie: {
    maxAge: 24 * 60 * 60 * 1000
-  },
+  }
 
   /***************************************************************************
   *                                                                          *
@@ -67,9 +67,9 @@ module.exports.session = {
   *                                                                          *
   ***************************************************************************/
 
-   adapter: 'sails-mongo',
-   url: process.env.MONGODB_URL || 'mongodb://localhost:27017/db',
-   collection: 'sessions'
+   //adapter: 'sails-mongo',
+   //url: process.env.MONGODB_URL || 'mongodb://localhost:27017/db',
+   //collection: 'sessions'
 
   /***************************************************************************
   *                                                                          *
