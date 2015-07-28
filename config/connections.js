@@ -67,13 +67,7 @@ module.exports.connections = {
 
   prodMongodbServer: {
     adapter: 'sails-mongo',
-    url: process.env.MONGODB_URL || 'mongodb://localhost:27017/db',
-
-    socketOptions: {
-      connectTimeoutMS: 30000,
-      socketTimeoutMS : 30000
-    },
-    poolSize: 5
+    url: process.env.MONGODB_URL || 'mongodb://localhost:27017/db'
   },
 
   /***************************************************************************
